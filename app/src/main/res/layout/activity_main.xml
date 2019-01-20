@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Akshay Galande"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorPrimary"
+    android:text="Go back to previous app"
+    android:onClick="goback"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load Web"
+        android:textColor="@color/colorPrimary"
+        android:onClick="loadweb"/>
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:id="@+id/web"></WebView>
+    </LinearLayout>
+</ScrollView>
